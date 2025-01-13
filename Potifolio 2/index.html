@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Adetuyi - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SA</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="darkModeToggle" class="cta">Dark Mode</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to <span>Sam Digital Services</span></h1>
+      <p>Where Creativity Meets Innovation</p>
+      <a href="#projects" class="cta">Explore My Work</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a freelance web and WordPress developer specializing in creating innovative, responsive, and engaging websites for clients worldwide.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters">
+        <button data-filter="all" class="filter active">All</button>
+        <button data-filter="web" class="filter">Web Development</button>
+        <button data-filter="wordpress" class="filter">WordPress</button>
+        <button data-filter="freelance" class="filter">Freelance</button>
+      </div>
+      <div class="project-grid">
+        <div class="project" data-category="web">
+          <h3>Portfolio Website</h3>
+          <p>Crafted a futuristic design for a tech enthusiast.</p>
+        </div>
+        <div class="project" data-category="wordpress">
+          <h3>WordPress Blog</h3>
+          <p>Created a travel blog with a focus on storytelling.</p>
+        </div>
+        <div class="project" data-category="freelance">
+          <h3>Online Store</h3>
+          <p>Developed an e-commerce store with dynamic features.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message" required  ></textarea>
+
+        <button type="submit" class="cta">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Samuel Adetuyi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
